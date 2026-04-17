@@ -23,8 +23,7 @@ for k = 1:nSamples
     line = readline(arduinoObj);
     disp(line);
 
-% Expect values in format "distance,light,motion" via circuit
-
+% Expect values in format "distance,light,motion" via arduino
 values = split(strtrim(line), ",");
 
 if numel(values) == 3
